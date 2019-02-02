@@ -1,0 +1,10 @@
+spring.application.name: image-service
+# port
+server.port: 9088
+# eureka server url
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    eureka-server-port: 11021
+    service-url.defaultZone: http://localhost:${eureka.client.eureka-server-port}/eureka/
